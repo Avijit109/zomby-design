@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face{
+  src: url("../webfonts/diagramm/Diagramm-Regular.ttf");
+  font-family: "Diagramm";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Acumin Pro ExtraCondensed';
+  src: url("../webfonts/acomin-pro-extra/fonts/fonnts.com-Acumin_Pro_ExtraCondensed_Light.otf");
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  object-fit: cover;
+}
+body{
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+:root{
+    --nav-height: 123px;
+}
+/* ----navbar ---  */
+.main-navbar{
+    z-index: 9999;
+}
+.brand-logo { 
+    width: 72px; 
+    height: 58px; 
+}
+.left-bar { 
+    width: 29px; 
+    height: 10px; 
+}
+.user-icon, .cart-icon { width: 25px; height: auto; }
+.full-navbar{
+    padding-top: 33px;
+    padding-bottom: 10px;
+}
+
+.banner_area{
+  background-color: #282828 !important;
+  background: url("../image/home-image/banner_bg_image.webp") no-repeat center/cover;
+  background-blend-mode: multiply;
+  min-height: calc(100vh - var(--nav-height));
+}
+.banner_text_earphone_area{
+    padding-top: 90px;
+    margin-bottom: 162px;
+}
+.banner_earphone_image_area{
+    top: 76%;
+    transform: translate(-50%, -50%);
+
+}
+.discover-btn{
+  background: linear-gradient(92.92deg, #00AEEF 0%, #006ADA 100%);
+  padding: 7px 34px;
+  font-size: 18px;
+}
+.discover-btn:hover{
+  background: #025dbe;
+}
+.banner_text_area_heading{
+  font-size: clamp(55px, 4vw, 111px);
+  font-weight: 900;
+  line-height: 114%;
+  font-family: "Diagramm";
+  letter-spacing: 0%;
+  color: #00AEEF;
+}
+.banner_text_area_des{
+  font-size: clamp(28px, 1.5vw, 44px);
+  font-family: "Acumin Pro ExtraCondensed";
+  margin-bottom: 46px;
+}
+.banner_sidebar_two,
+.banner_sidebar_one{
+  top: 28%;
+}
+.bg-blue{
+  width: 32px;
+  height: 139px;
+  transform: rotate(-90deg);
+  background: #00AEEF;
+}
+
+@media (min-height:600px) and (max-height:900px){
+  .banner_text_earphone_area{
+      padding-top:160px;
+      margin-bottom:136px;
+  }
+  .full-navbar{
+    padding-top: 10px;
+  }
+  .banner_earphone_image_area{
+    top: 75%;
+  }
+  .banner_text_area_des{
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-height:901px) and (max-height:982px){
+  .banner_text_earphone_area{
+    margin-bottom: 159px;
+    padding-top: 194px;
+  }
+   .banner_sidebar_one,
+  .banner_sidebar_two{
+    top:32%
+  }
+}
+@media (min-height:983px) and (max-height:1117px){
+  .banner_text_earphone_area{
+    margin-bottom: 188px;
+    padding-top: 196px;
+  }
+  .banner_sidebar_one,
+  .banner_sidebar_two{
+    top:31%
+  }
+
+}
+@media screen and (min-width:1400px) and (max-width:1500px) {
+  .banner_sidebar_one_image,
+  .banner_sidebar_two_image{
+    width: 75%;
+  }  
+  .banner_sidebar_one,
+  .banner_sidebar_two{
+    top:32%
+  }
+  
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+       .banner_text_earphone_area {
+        padding-top:219px;
+        margin-bottom: 87px;
+    } 
+        .banner_earphone_image_area {
+        top: 83%;
+    }
+    .banner_sidebar_one,
+  .banner_sidebar_two{
+    top:30%
+  }
+}
