@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+@font-face{
+  src: url("../webfonts/diagramm/Diagramm-Regular.ttf");
+  font-family: "Diagramm";
+}
+@font-face {
+  font-family: 'Acumin Pro ExtraCondensed';
+  src: url("../webfonts/acomin-pro-extra/fonts/fonnts.com-Acumin_Pro_ExtraCondensed_Light.otf");
+}
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+img{
+  max-width:100%;
+  display:block;
+}
+
+/* ROOT */
+:root{
+  --nav-height:70px;
+}
+
+/* BODY */
+body{
+  margin:0;
+  overflow-x:hidden;
+  font-family:"Montserrat", sans-serif;
+}
+
+/* NAVBAR */
+.main-navbar{
+  height:var(--nav-height);
+  z-index:999;
+}
+.brand-logo{
+   width:72px;
+   padding-left: 18px;
+ }
+.left-bar{ width:26px; }
+.user-icon,.cart-icon{ width:22px; }
+
+/* ================= BANNER ================= */
+.banner_area{
+  height:100dvh;
+  padding-top:var(--nav-height);
+
+  background:url("../image/home-image/banner_bg_image.webp") no-repeat center/cover;
+  background-color:#282828;
+  background-blend-mode:multiply;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  gap:clamp(60px,5vh,100px);
+  padding-left:15px;
+  padding-right:15px;
+
+  overflow:hidden;
+}
+
+/* IMAGE AREA */
+.banner_text_earphone_area{
+  position:relative;
+  width:100%;
+  width: clamp(300px,80vw,900px);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* BACK TEXT IMAGE */
+.banner_text_image{
+  width:100%;
+  max-width:700px;
+}
+
+/* EARPHONE */
+.banner_earphone_image_area{
+  position:absolute;
+  top:52%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:clamp(110px,18vw,250px);
+}
+
+/* TEXT */
+.banner_text_area{
+  text-align:center;
+  max-width:700px;
+}
+
+.banner_text_area_heading{
+  font-family:"Diagramm";
+  color:#00AEEF;
+  font-size:clamp(55px,4.5vw,111px);
+  line-height:114%;
+  margin-bottom: clamp(20px,1.5vh,50px);
+}
+
+.banner_text_area_des{
+  font-family:"Acumin Pro ExtraCondensed";
+  font-size:clamp(28px,2vw,44px);
+  color:#fff;
+  margin:clamp(8px,1.5vh,20px) 0;
+  line-height: 100%;
+  margin-bottom: clamp(20px,1.5vh,50px);
+}
+
+/* BUTTON */
+.discover-btn{
+  background:linear-gradient(92.92deg,#00AEEF 0%,#006ADA 100%);
+  color:#fff;
+  border:none;
+  padding:clamp(6px,1vh,12px) clamp(18px,3vw,36px);
+  font-size:clamp(12px,1.5vw,16px);
+}
+
+/* SIDEBARS */
+.banner_sidebar_one,
+.banner_sidebar_two{
+  position:absolute;
+  top: clamp(20%, 23%, 35%);
+}
+.banner_sidebar_one{ left:0; }
+.banner_sidebar_two{ right:0; }
+
+/* ================= MOBILE ================= */
+@media (max-width:768px){
+
+  .banner_earphone_image_area{
+    top:55%;
+    width:clamp(90px,30vw,150px);
+  }
+
+
+  .brand-logo{ 
+    width:90px; 
+    padding-left: 25px;
+  }
+}
